@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Dizibox Ad Remover",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.dizibox.pw/*", "http://www.dizibox.pw/*"],
+      "js": ["main.js"],
+      "css": ["main.css"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Dizibox Ad Remover"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
