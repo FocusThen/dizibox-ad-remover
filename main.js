@@ -4,15 +4,11 @@ function getDomElement(id) {
 function multiSelector(rel) {
   return document.querySelectorAll(rel);
 }
-
 function selector(el) {
   return document.querySelector(el);
 }
 
-// Izlenmek istenen video
-const video = getDomElement("vido-before-video-content");
-
-// display none
+// ads
 const adsToRemove = [
   "#pageskin",
   ".box-header-bottom",
@@ -24,14 +20,23 @@ const adsToRemove = [
   "#btaglink",
 ];
 
-adsToRemove.filter((ads) => {
-  const el = selector(ads);
-  if (el === null) {
-    return;
-  }
-  el.classList.add("outTrash");
-});
+function arrAds(arr) {
+  return arr.map((ads) => selector(ads));
+}
+
+async function main() {
+  await arrAds(adsToRemove).filter((ads) => {
+    if (ads === null) {
+      return;
+    }
+    ads.classList.add("outTrash");
+  });
+}
+
+// Izlenmek istenen video
+const video = getDomElement("vido-before-video-content");
 
 if (video !== null) {
   video.classList.add("getVideo");
 }
+main();
