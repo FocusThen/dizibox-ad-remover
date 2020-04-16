@@ -1,15 +1,37 @@
-// Izlenmek istenen video
-const video = document.getElementById("vido-before-video-content");
-// Gecbuttonu => display none
-const gecbutonu = document.getElementById("gecbutonu");
-// gereksiz bosluk => display none
-const count = document.getElementById("vido-countdown");
+function getDomElement(id) {
+  return document.getElementById(id);
+}
+function multiSelector(rel) {
+  return document.querySelectorAll(rel);
+}
 
-// Error Handle
-if (video !== null && gecbutonu !== null && count !== null) {
-  // display inline
+function selector(el) {
+  return document.querySelector(el);
+}
+
+// Izlenmek istenen video
+const video = getDomElement("vido-before-video-content");
+
+// display none
+const adsToRemove = [
+  "#pageskin",
+  ".box-header-bottom",
+  ".reklam2",
+  ".box-sidebar",
+  "#vido-before-video",
+  "#gecbutonu",
+  "#vido-countdown",
+  "#btaglink",
+];
+
+adsToRemove.filter((ads) => {
+  const el = selector(ads);
+  if (el === null) {
+    return;
+  }
+  el.classList.add("outTrash");
+});
+
+if (video !== null) {
   video.classList.add("getVideo");
-  // display none
-  gecbutonu.classList.add("outTrash");
-  count.classList.add("outTrash");
 }
