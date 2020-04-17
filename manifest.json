@@ -1,11 +1,18 @@
 {
   "manifest_version": 2,
   "name": "Dizibox Ad Remover",
-  "description": "Ads and pop-ups remover on Dizibox.",
-  "version": "0.1.2",
+  "description": "Ads and pop-ups remover on Dizibox, Dizilab and Dizimag1.",
+  "version": "0.1.3",
   "content_scripts": [
     {
-      "matches": ["https://www.dizibox.pw/*", "http://www.dizibox.pw/*"],
+      "matches": [
+        "https://www.dizibox.pw/*",
+        "http://www.dizibox.pw/*",
+        "https://dizilab.pw/*",
+        "http://dizilab.pw/*",
+        "https://dizimag1.org/*",
+        "http://dizimag1.org/*"
+      ],
       "js": ["main.js"],
       "css": ["main.css"]
     }

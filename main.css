@@ -5,8 +5,17 @@
 #vido-before-video,
 #gecbutonu,
 #vido-countdown,
-#btaglink {
+#btaglink,
+a[rel="nofollow"],
+img.close_page_skin,
+a#sticky_banner,
+div.playersag,
+div.jwpreview,
+iframe[rel="nofollow"] {
   display: none !important;
+}
+body {
+  background: #0a192f !important;
 }
 
 #vido-before-video-content {
