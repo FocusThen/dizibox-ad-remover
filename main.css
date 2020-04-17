@@ -7,11 +7,19 @@
 #vido-countdown,
 #btaglink,
 a[rel="nofollow"],
+a[href*="https://bit.ly/"],
 img.close_page_skin,
 a#sticky_banner,
 div.playersag,
 div.jwpreview,
-iframe[rel="nofollow"] {
+iframe[rel="nofollow"],
+iframe[allowtransparency="true"],
+div#video-onu2,
+div#single_1,
+div#single_1_aciklama_alt,
+center,
+#reklam-video-yani,
+div#preRollBd {
   display: none !important;
 }
 body {
