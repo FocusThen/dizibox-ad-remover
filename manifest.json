@@ -1,6 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Dizibox Ad Remover",
+  "description": "Ads and pop-ups remover on Dizibox.",
   "version": "0.1.2",
   "content_scripts": [
     {
