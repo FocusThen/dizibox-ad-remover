@@ -1,6 +1,14 @@
-.getVideo {
-  display: inline !important;
-}
-.outTrash {
+#pageskin,
+.box-header-bottom,
+.reklam2,
+.box-sidebar,
+#vido-before-video,
+#gecbutonu,
+#vido-countdown,
+#btaglink {
   display: none !important;
+}
+
+#vido-before-video-content {
+  display: inline !important;
 }
