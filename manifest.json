@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Dizibox Ad Remover",
-  "description": "Ads and pop-ups remover on  Dizibox, Dizilab, Dizimag1, filmakinesi and 720pizle.",
+  "description": "Ads and pop-ups remover on  Dizibox, Dizilab, Dizimag1(2), filmakinesi and 720pizle.",
   "version": "0.1.5",
   "content_scripts": [
     {
