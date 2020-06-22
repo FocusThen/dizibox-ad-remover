@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Dizibox Ad Remover",
-  "description": "Ads and pop-ups remover on  Dizibox, Dizilab, Dizimag1(2), filmakinesi and 720pizle.",
-  "version": "0.1.5",
+  "description": "Ads and pop-ups remover on  Dizibox, Dizilab, Dizimag2, filmakinesi and 720pizle.",
+  "version": "0.2.0",
   "content_scripts": [
     {
       "matches": [
@@ -10,8 +10,6 @@
         "http://www.dizibox.pw/*",
         "https://dizilab.pw/*",
         "http://dizilab.pw/*",
-        "https://dizimag1.org/*",
-        "http://dizimag1.org/*",
         "https://dizimag2.org/*",
         "http://dizimag2.org/*",
         "https://filmakinesi.net/*",
